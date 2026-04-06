@@ -70,7 +70,15 @@ export default function LandingMaxilofacialVic() {
       role: 'Cirurgiana oral i maxil·lofacial',
       img: '/doctors/lidia-darder.jpg',
       position: 'center 18%',
-      bio: 'Especialista en Cirurgia Oral i Maxil·lofacial. Desenvolupa la seva activitat assistencial amb un enfocament proper, rigorós i orientat al tractament personalitzat de cada pacient. Té especial dedicació a la cirurgia oral, els queixals del seny, les dents incloses i els tractaments implantològics.',
+      bio: 'Especialista en Cirurgia Oral i Maxil·lofacial. La Dra. Lídia Darder compta amb més de deu anys d’experiència en l’àmbit de la cirurgia oral i maxil·lofacial a Girona. Es va llicenciar en Medicina i Cirurgia per la Universitat Autònoma de Barcelona i es va especialitzar en Cirurgia Oral i Maxil·lofacial via MIR a l’Hospital Vall d'Hebron.
+
+Actualment és metgessa adjunta del Servei de Cirurgia Oral i Maxil·lofacial de l’Hospital Universitari Dr. Josep Trueta.
+
+Per complementar la seva formació, ha obtingut el diploma en Implantologia Oral per la Societat Catalano-Balear de Cirurgia Oral i Maxil·lofacial i el títol europeu EBOMS (European Board of Oral and Maxillofacial Surgery), que acredita el seu nivell com a especialista a escala europea.
+
+En l’àmbit docent, ha exercit com a professora associada tant a la Facultat de Medicina de la Universitat de Girona com a la Universitat Internacional de Catalunya.
+
+Forma part activa de la Societat Catalano-Balear de Cirurgia Oral i Maxil·lofacial i de la Sociedad Española de Cirugía Oral y Maxilofacial. La seva aposta per la formació contínua l’ha portat a participar en nombrosos cursos i congressos nacionals i internacionals, mantenint-se sempre actualitzada en les tècniques més avançades de la seva especialitat.',
     },
   ];
 
