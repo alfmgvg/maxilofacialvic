@@ -87,7 +87,7 @@ export default function Page() {
     'Osona',
   ];
 
-  function TeamMemberCard({ doctor }: { doctor: (typeof doctors)[number] }) {
+  function TeamMemberCard({ doctor }) {
     return (
       <article className="rounded-3xl border border-emerald-100 bg-white p-5 shadow-sm transition hover:shadow-md">
         <div className="mb-4 h-80 overflow-hidden rounded-2xl bg-slate-100">
