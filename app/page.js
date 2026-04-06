@@ -1,137 +1,107 @@
-// SEO CONFIG FOR DOMAIN
-// Recommended domain: https://maxilofacialbarcelona.com
-// Secondary domain redirect: https://cirujanomaxilofacial.info
-// Main SEO title:
-// "Cirujano Maxilofacial en Barcelona | Muelas del juicio e implantes dentales"
-// Meta description:
-// "Unidad de Cirugía Oral y Maxilofacial en HM Nou Delfos, Barcelona. Especialistas en muelas del juicio, cordales incluidos, implantes dentales y cirugía oral compleja."
-
-export default function LandingHMNouDelfos() {
-  const appointmentUrl =
-    'https://portaldelpaciente.hmhospitales.com/peticion-cita';
-
-  const hospitalPhone = '+34932545167';
-  const hospitalPhoneDisplay = '932 545 167';
-  const whatsappUrl = 'https://wa.me/34608944914';
-  const whatsappDisplay = '608 94 49 14';
+export default function LandingMaxilofacialVic() {
+  const siteUrl = 'https://maxilofacialvic.cat';
+  const appointmentUrl = 'https://citaweb.bayesconsultori.cat/#/login';
+  const phoneHref = 'tel:+34938894404';
+  const phoneDisplay = '938 89 44 04';
+  const whatsappUrl = 'https://wa.me/34638338885';
+  const whatsappDisplay = '638 33 88 85';
+  const email = 'info@bayesdental.cat';
+  const emailHref = 'mailto:info@bayesdental.cat';
 
   const localBusinessSchema = {
     '@context': 'https://schema.org',
     '@type': 'MedicalClinic',
-    name: 'Unidad de Cirugía Oral y Maxilofacial - HM Nou Delfos',
+    name: 'Cirurgia Oral i Maxil·lofacial - Bayés Centre',
     description:
-      'Unidad especializada en cirugía oral y maxilofacial en Barcelona. Tratamientos de muelas del juicio, cordales incluidos, implantes dentales y cirugía oral compleja. Atención hospitalaria en HM Nou Delfos.',
-    telephone: '+34 932 545 167',
-    url: 'https://maxilofacialbarcelona.com',
-    image: 'https://maxilofacialbarcelona.com/logo-ocm.png',
+      'Consulta de cirurgia oral i maxil·lofacial a Vic, al Bayés Centre. Especialistes en queixals del seny, implants dentals, dents incloses i cirurgia oral complexa per a pacients de Vic i Osona.',
+    telephone: '+34 938 89 44 04',
+    email: email,
+    url: siteUrl,
+    image: `${siteUrl}/logo-bayes-centre.png`,
     medicalSpecialty: 'Oral and Maxillofacial Surgery',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Avinguda de Vallcarca, 151',
-      addressLocality: 'Barcelona',
+      streetAddress: 'Carrer de Sant Just, 1',
+      addressLocality: 'Vic',
       addressRegion: 'Barcelona',
-      postalCode: '08023',
+      postalCode: '08500',
       addressCountry: 'ES',
     },
     areaServed: [
-      'Barcelona',
-      'Gràcia',
-      'Sarrià-Sant Gervasi',
-      'Eixample',
-      'Horta-Guinardó',
-      'Les Corts',
-      'Badalona',
-      "L'Hospitalet de Llobregat",
-      'Sant Cugat del Vallès',
-      'Barcelona provincia',
+      'Vic',
+      'Osona',
+      'Manlleu',
+      'Torelló',
+      'Centelles',
+      'Tona',
+      'Taradell',
+      'Roda de Ter',
+      'Gurb',
+      'Sant Hipòlit de Voltregà',
     ],
-    sameAs: [
-      'https://www.hmhospitales.com/hm-nou-delfos',
-      appointmentUrl,
-    ],
+    sameAs: ['https://bayesconsultori.cat/', appointmentUrl],
   };
 
   const treatments = [
     {
-      title: 'Muelas del juicio',
-      text: 'Valoración y extracción de cordales incluidos, semiincluidos o complejos con un enfoque quirúrgico seguro y personalizado.',
+      title: 'Queixals del seny',
+      text: 'Valoració i extracció de queixals del seny inclosos, semiinclosos o complexos amb una planificació segura i personalitzada.',
     },
     {
-      title: 'Implantes dentales',
-      text: 'Tratamientos con implantes en casos sencillos y complejos, con planificación precisa para recuperar función y estética.',
+      title: 'Implants dentals',
+      text: 'Tractaments amb implants dentals en casos senzills i complexos, amb enfocament funcional, estètic i quirúrgic.',
     },
     {
-      title: 'Cirugía oral compleja',
-      text: 'Abordaje de quistes maxilares, dientes incluidos, infecciones y otras patologías de cirugía oral y maxilofacial.',
+      title: 'Cirurgia oral',
+      text: 'Tractament de dents incloses, quists maxil·lars, infeccions, patologia oral i altres procediments de cirurgia oral i maxil·lofacial.',
     },
   ];
 
   const doctors = [
     {
       name: 'Dr. Alfonso Mogedas Vegara',
-      role: 'Jefe de Servicio',
+      role: 'Cirurgià oral i maxil·lofacial',
       img: '/doctors/mogedas.jpg',
       position: 'center 32%',
-      bio: 'Licenciado en Medicina y Cirugía por la UMH de Alicante. Especialista en Cirugía Oral y Maxilofacial vía MIR en el Hospital Vall d’Hebron. Doctor en Medicina y Cirugía Cum Laude por la UAB y Fellow del European Board of Oral and Maxillofacial Surgery. Actualmente es adjunto del Servicio de Cirugía Oral y Maxilofacial del Hospital Parc Taulí y profesor colaborador de la UAB.',
+      bio: 'Llicenciat en Medicina i Cirurgia per la UMH d’Alacant. Especialista en Cirurgia Oral i Maxil·lofacial via MIR a l’Hospital Vall d’Hebron. Doctor en Medicina i Cirurgia Cum Laude per la UAB i Fellow of the European Board of Oral and Maxillofacial Surgery. Actualment combina l’activitat hospitalària i privada amb una dedicació especial a la cirurgia oral, els queixals del seny complexos i els implants dentals.',
     },
     {
-      name: 'Dr. Nil Valentínes',
-      role: 'Cirujano Oral y Maxilofacial',
-      img: '/doctors/valentines.png',
-      position: 'center 34%',
-      bio: 'Licenciado en Medicina y Cirugía por la Universidad Autónoma de Barcelona. Especialista en Cirugía Oral y Maxilofacial vía MIR en el Hospital Universitario de Bellvitge. Actualmente combina la actividad asistencial pública en el Hospital Parc Taulí con la práctica privada hospitalaria. Dispone de formación específica en implantología oral, destacando el Posgrado en Implantología Oral, Cirugía y Prótesis (UdG); así como en planificación quirúrgica virtual, postprocesado de imagen médica e impresión 3D, con formación avanzada en programas especializados como el Comprehensive Transversal Programme in Medical Image Post-Processing (UPC).',
-    },
-    {
-      name: 'Dra. Paula Donate',
-      role: 'Cirujana Oral y Maxilofacial',
-      img: '/doctors/donate.jpg',
-      position: 'center 30%',
-      bio: 'Licenciada en Medicina por la Universidad de Cantabria en 2014 y Doctora en Medicina por la Universidad de Oviedo en 2020. Realizó la residencia en el Hospital Universitario Central de Asturias. Posteriormente continuó su formación con másteres y cursos, entre los que destacan: Máster en Implantología y Cirugía Oral por la Universidad Cardenal Herrera en 2021, curso de especialización en Medicina Estética Facial por la Universidad Complutense de Madrid en 2021 y Posgrado Europeo en Oncología y Cirugía de Cabeza y Cuello en 2024.',
-    },
-    {
-      name: 'Dr. Radek Lewko',
-      role: 'Cirujano Oral y Maxilofacial',
-      img: '/doctors/lewko.png',
-      position: 'center 33%',
-      bio: 'Cirujano especializado en cirugía oral y maxilofacial. “La medicina ha sido mi pasión desde pequeño. Durante los años de carrera despertó mi interés por la anatomía de cabeza y cuello, su complejidad y la precisión necesaria en esta área anatómica. Esto me ha llevado a especializarme como cirujano oral y maxilofacial, prestando atención a cada detalle para conseguir la recuperación precoz de mis pacientes”.',
-    },
-    {
-      name: 'Dr. Roderick Bonilla',
-      role: 'Cirujano Oral y Maxilofacial',
-      img: '/doctors/roderick.jpg',
-      position: 'center 28%',
-      bio: 'El Dr. Bonilla es especialista en Cirugía y Estética Maxilofacial, con formación vía MIR en el Hospital de Bellvitge de Barcelona. Experto en blefaroplastia, lifting facial, cirugía de masculinización y feminización facial, lip lift, lipofilling facial, rinoplastias reconstructivas y rinoplastia ultrasónica.',
+      name: 'Dra. Lídia Darder',
+      role: 'Cirurgiana oral i maxil·lofacial',
+      img: '/doctors/lidia-darder.jpg',
+      position: 'center 18%',
+      bio: 'Especialista en Cirurgia Oral i Maxil·lofacial. Desenvolupa la seva activitat assistencial amb un enfocament proper, rigorós i orientat al tractament personalitzat de cada pacient. Té especial dedicació a la cirurgia oral, els queixals del seny, les dents incloses i els tractaments implantològics.',
     },
   ];
 
   const nearbyCities = [
-    'Barcelona',
-    'Gràcia',
-    'Sarrià-Sant Gervasi',
-    'Eixample',
-    'Horta-Guinardó',
-    'Les Corts',
-    'Badalona',
-    "L'Hospitalet de Llobregat",
-    'Sant Cugat del Vallès',
-    'Esplugues de Llobregat',
+    'Vic',
+    'Manlleu',
+    'Torelló',
+    'Tona',
+    'Taradell',
+    'Centelles',
+    'Roda de Ter',
+    'Gurb',
+    'Sant Julià de Vilatorta',
+    'Osona',
   ];
 
   function TeamMemberCard({ doctor }) {
     return (
-      <article className="rounded-3xl border border-sky-100 bg-white p-5 shadow-sm transition hover:shadow-md">
-        <div className="mb-4 h-72 overflow-hidden rounded-2xl bg-slate-100">
+      <article className="rounded-3xl border border-emerald-100 bg-white p-5 shadow-sm transition hover:shadow-md">
+        <div className="mb-4 h-80 overflow-hidden rounded-2xl bg-slate-100">
           <img
             src={doctor.img}
             alt={doctor.name}
             className="block h-full w-full object-cover"
-            style={{ objectPosition: doctor.position || 'center 35%' }}
+            style={{ objectPosition: doctor.position || 'center 30%' }}
             loading="lazy"
           />
         </div>
 
         <h3 className="text-lg font-semibold text-slate-900">{doctor.name}</h3>
-        <p className="mt-1 text-sm font-medium text-sky-700">{doctor.role}</p>
+        <p className="mt-1 text-sm font-medium text-emerald-700">{doctor.role}</p>
         <p className="mt-3 text-sm leading-6 text-slate-600">{doctor.bio}</p>
       </article>
     );
@@ -148,16 +118,16 @@ export default function LandingHMNouDelfos() {
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
           <div className="flex items-center gap-4">
             <img
-              src="/logo-ocm.png"
-              alt="Unidad de Cirugía Oral y Maxilofacial"
-              className="h-12 w-auto"
+              src="/logo-bayes-centre.png"
+              alt="Bayés Centre"
+              className="h-14 w-auto"
             />
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-700">
-                HM Nou Delfos
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700">
+                Bayés Centre · Vic
               </p>
               <p className="text-sm font-medium text-slate-600">
-                Unidad de Cirugía Oral y Maxilofacial
+                Cirurgia oral i maxil·lofacial
               </p>
             </div>
           </div>
@@ -167,32 +137,31 @@ export default function LandingHMNouDelfos() {
               href={appointmentUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-2xl bg-sky-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-800"
+              className="rounded-2xl bg-emerald-700 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-800"
             >
-              Pedir cita
+              Demanar visita
             </a>
           </div>
         </div>
       </header>
 
-      <main className="min-h-screen bg-white pb-24 text-slate-900 selection:bg-sky-100">
-        <section className="border-b border-slate-200 bg-gradient-to-b from-sky-50 via-white to-white">
+      <main className="min-h-screen bg-white pb-24 text-slate-900 selection:bg-emerald-100">
+        <section className="border-b border-slate-200 bg-gradient-to-b from-emerald-50 via-white to-white">
           <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
             <div>
-              <span className="inline-flex rounded-full border border-slate-300 bg-white px-4 py-1 text-sm font-medium text-slate-700">
-                Cirugía Oral y Maxilofacial · HM Nou Delfos · Barcelona
+              <span className="inline-flex rounded-full border border-emerald-200 bg-white px-4 py-1 text-sm font-medium text-slate-700">
+                Cirurgia oral i maxil·lofacial · Bayés Centre · Vic
               </span>
 
               <h1 className="mt-5 text-4xl font-bold tracking-tight text-slate-900 lg:text-5xl">
-                Especialistas en muelas del juicio, cirugía oral compleja e implantes
-                dentales en Barcelona
+                Cirurgia maxil·lofacial a Vic per a pacients d’Osona
               </h1>
 
               <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-700">
-                Atendemos a pacientes de Barcelona y poblaciones cercanas que necesitan
-                extracción de cordales incluidos, tratamiento de quistes maxilares e
-                implantes dentales, tanto en casos sencillos como complejos. Atención
-                especializada en entorno hospitalario en HM Nou Delfos.
+                A Bayés Centre, a Vic, atenem pacients que necessiten extracció de
+                queixals del seny, tractament de dents incloses, cirurgia oral i
+                implants dentals. Oferim una atenció propera, especialitzada i
+                personalitzada per a Vic i tota la comarca d’Osona.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
@@ -200,60 +169,65 @@ export default function LandingHMNouDelfos() {
                   href={appointmentUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-2xl bg-sky-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-800"
+                  className="rounded-2xl bg-emerald-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-800"
                 >
-                  Pedir cita
+                  Demanar visita
                 </a>
 
                 <a
-                  href={hospitalPhone}
-                  className="rounded-2xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-sky-50"
+                  href={phoneHref}
+                  className="rounded-2xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-emerald-50"
                 >
-                  Llamar al {hospitalPhoneDisplay}
+                  Trucar al {phoneDisplay}
                 </a>
 
                 <a
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-2xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-sky-50"
+                  className="rounded-2xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-emerald-50"
                 >
                   WhatsApp
+                </a>
+
+                <a
+                  href={emailHref}
+                  className="rounded-2xl border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-emerald-50"
+                >
+                  Correu electrònic
                 </a>
               </div>
 
               <p className="mt-4 text-sm text-slate-500">
-                También puedes escribirnos por WhatsApp al {whatsappDisplay} para pedir
-                información o solicitar cita.
+                També ens pots escriure per WhatsApp al {whatsappDisplay} o a {email}{' '}
+                per demanar informació o sol·licitar visita.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:col-span-2">
+              <div className="rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm sm:col-span-2">
                 <p className="text-sm font-semibold uppercase tracking-wide text-slate-500">
-                  Tratamientos destacados
+                  Tractaments destacats
                 </p>
                 <ul className="mt-4 space-y-3 text-slate-700">
-                  <li>• Extracción de muelas del juicio complejas</li>
-                  <li>• Cordales incluidos y dientes retenidos</li>
-                  <li>• Quistes maxilares y cirugía oral</li>
-                  <li>• Implantes dentales unitarios y múltiples</li>
-                  <li>• Rehabilitación de casos complejos</li>
+                  <li>• Extracció de queixals del seny complexos</li>
+                  <li>• Dents incloses i dents retingudes</li>
+                  <li>• Quists maxil·lars i cirurgia oral</li>
+                  <li>• Implants dentals unitaris i múltiples</li>
+                  <li>• Valoració de casos quirúrgics complexos</li>
                 </ul>
               </div>
 
-              <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <p className="text-3xl font-bold text-slate-900">Barcelona</p>
+              <div className="rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm">
+                <p className="text-3xl font-bold text-slate-900">Vic</p>
                 <p className="mt-2 text-slate-600">
-                  Atención hospitalaria en HM Nou Delfos
+                  Atenció especialitzada al nou Bayés Centre
                 </p>
               </div>
 
-              <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                <p className="text-3xl font-bold text-slate-900">Planta -1</p>
-                <p className="mt-2 text-slate-600">
-                  Ubicación de la consulta en el hospital
-                </p>
+              <div className="rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm">
+                <p className="text-3xl font-bold text-slate-900">3a planta</p>
+                <p className="mt-2 text-slate-600">Consulta de cirurgia maxil·lofacial</p>
               </div>
             </div>
           </div>
@@ -262,14 +236,14 @@ export default function LandingHMNouDelfos() {
         <section className="mx-auto max-w-7xl px-6 py-16">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-              ¿A quién va dirigida esta página?
+              A qui va dirigida aquesta pàgina?
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              A personas que buscan un cirujano maxilofacial en Barcelona para resolver
-              problemas como muelas del juicio retenidas, dolor e infección de cordales,
-              quistes de los maxilares o colocación de implantes dentales. Atención
-              especializada en un entorno hospitalario moderno y preparado para cirugía
-              oral y maxilofacial.
+              A persones que busquen un cirurgià maxil·lofacial a Vic per resoldre
+              problemes com queixals del seny inclosos, dolor o infecció dental,
+              dents retingudes, quists dels maxil·lars o la necessitat de col·locar
+              implants dentals. Atenció especialitzada, propera i orientada a la
+              cirurgia oral i maxil·lofacial a Osona.
             </p>
           </div>
 
@@ -277,7 +251,7 @@ export default function LandingHMNouDelfos() {
             {nearbyCities.map((city) => (
               <span
                 key={city}
-                className="rounded-full bg-sky-100 px-4 py-2 text-sm text-slate-700"
+                className="rounded-full bg-emerald-100 px-4 py-2 text-sm text-slate-700"
               >
                 {city}
               </span>
@@ -285,16 +259,16 @@ export default function LandingHMNouDelfos() {
           </div>
         </section>
 
-        <section className="border-y border-slate-200 bg-sky-50/60">
+        <section className="border-y border-slate-200 bg-emerald-50/60">
           <div className="mx-auto max-w-7xl px-6 py-16">
             <div className="max-w-3xl">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-                Qué tratamos
+                Què tractem
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                Tratamos patología habitual y compleja de cirugía oral y maxilofacial,
-                con especial dedicación a la extracción de cordales incluidos, la cirugía
-                oral avanzada y la colocación de implantes dentales.
+                Tractem patologia habitual i complexa de cirurgia oral i
+                maxil·lofacial, amb especial dedicació als queixals del seny, la
+                cirurgia oral avançada i els implants dentals.
               </p>
             </div>
 
@@ -302,7 +276,7 @@ export default function LandingHMNouDelfos() {
               {treatments.map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+                  className="rounded-3xl border border-emerald-100 bg-white p-6 shadow-sm"
                 >
                   <h3 className="text-xl font-semibold text-slate-900">
                     {item.title}
@@ -318,13 +292,13 @@ export default function LandingHMNouDelfos() {
           <div className="grid gap-10 lg:grid-cols-[1.45fr_0.95fr] lg:items-start">
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-                Equipo de cirujanos maxilofaciales
+                Equip de cirurgia maxil·lofacial
               </h2>
               <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-700">
-                Equipo de cirugía oral y maxilofacial con experiencia en cirugía de
-                cordales incluidos, implantes dentales y tratamiento de patología oral
-                compleja. El Dr. Alfonso Mogedas Vegara es el jefe de servicio y
-                cirujano maxilofacial responsable de la unidad.
+                Equip format pel Dr. Alfonso Mogedas Vegara i la Dra. Lídia Darder,
+                especialistes en cirurgia oral i maxil·lofacial. Atenció a pacients
+                amb queixals del seny inclosos, cirurgia oral i tractaments amb
+                implants dentals a Vic.
               </p>
 
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -334,60 +308,68 @@ export default function LandingHMNouDelfos() {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div className="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-                Dónde estamos
+                On som
               </h2>
 
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                HM Nou Delfos
+                Bayés Centre
                 <br />
-                Avinguda de Vallcarca, 151
+                Carrer de Sant Just, 1
                 <br />
-                08023 Barcelona
+                08500 Vic, Barcelona
+                <br />
+                3a planta
               </p>
 
               <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
                 <iframe
-                  src="https://www.google.com/maps?q=HM+Nou+Delfos+Barcelona&output=embed"
+                  src="https://www.google.com/maps?q=Carrer+de+Sant+Just,+1,+Vic&output=embed"
                   width="100%"
                   height="320"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Mapa HM Nou Delfos"
+                  title="Mapa Bayés Centre Vic"
                 />
               </div>
 
               <a
-                href="https://www.google.com/maps/search/?api=1&query=HM+Nou+Delfos+Barcelona"
+                href="https://www.google.com/maps/search/?api=1&query=Carrer+de+Sant+Just,+1,+Vic"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex rounded-2xl bg-sky-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-sky-800"
+                className="mt-4 inline-flex rounded-2xl bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800"
               >
-                Cómo llegar en Google Maps
+                Com arribar amb Google Maps
               </a>
 
               <div className="mt-8 space-y-3 text-slate-700">
                 <p>
-                  <span className="font-semibold">Teléfono:</span> {hospitalPhoneDisplay}
+                  <span className="font-semibold">Telèfon:</span> {phoneDisplay}
                 </p>
                 <p>
                   <span className="font-semibold">WhatsApp:</span> {whatsappDisplay}
                 </p>
                 <p>
-                  <span className="font-semibold">Consulta:</span> Planta -1
+                  <span className="font-semibold">Correu:</span> {email}
                 </p>
                 <p>
-                  <span className="font-semibold">Pedir cita:</span>{' '}
+                  <span className="font-semibold">Consulta:</span> 3a planta
+                </p>
+                <p>
+                  <span className="font-semibold">Centre:</span> Bayés Centre, Vic
+                </p>
+                <p>
+                  <span className="font-semibold">Demanar visita:</span>{' '}
                   <a
                     href={appointmentUrl}
                     className="underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Portal del Paciente HM
+                    Cita online
                   </a>
                 </p>
               </div>
@@ -398,38 +380,38 @@ export default function LandingHMNouDelfos() {
         <section className="mx-auto max-w-7xl px-6 py-16">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-              Extracción de muelas del juicio en Barcelona
+              Extracció de queixals del seny a Vic
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Las muelas del juicio o cordales pueden provocar dolor, infecciones
-              repetidas, inflamación de la encía o daño a los dientes vecinos. Nuestro
-              equipo de cirugía oral y maxilofacial en Barcelona está especializado en la
-              extracción de cordales incluidos o complejos, utilizando técnicas
-              quirúrgicas seguras y una planificación individualizada para cada paciente.
+              Els queixals del seny poden provocar dolor, infeccions repetides,
+              inflamació de la geniva o afectació de les dents del costat. A la
+              nostra consulta de Vic estem especialitzats en l’extracció de
+              queixals del seny inclosos o complexos, amb una planificació
+              individualitzada per a cada pacient.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Valoramos cada caso con radiografías o TAC dental cuando es necesario para
-              determinar la posición exacta del cordal y planificar la cirugía de forma
-              precisa.
+              Valorem cada cas amb radiografies o TAC dental quan cal, per determinar
+              la posició exacta de la dent i planificar la cirurgia amb la màxima
+              precisió.
             </p>
           </div>
         </section>
 
-        <section className="border-y border-slate-200 bg-sky-50/60">
+        <section className="border-y border-slate-200 bg-emerald-50/60">
           <div className="mx-auto max-w-7xl px-6 py-16">
             <div className="max-w-3xl">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-                Implantes dentales en Barcelona
+                Implants dentals a Vic
               </h2>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                Los implantes dentales permiten sustituir dientes perdidos recuperando la
-                función masticatoria y la estética. En nuestra consulta en HM Nou Delfos
-                realizamos tanto implantes unitarios como rehabilitaciones más complejas.
+                Els implants dentals permeten substituir dents perdudes recuperant la
+                funció masticatòria i l’estètica. A Bayés Centre realitzem tant
+                implants unitaris com rehabilitacions més complexes.
               </p>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                También tratamos casos con pérdida de hueso, dientes retenidos o
-                situaciones quirúrgicas complejas que requieren la valoración de un
-                cirujano maxilofacial.
+                També valorem casos amb pèrdua d’os, dents incloses o situacions
+                quirúrgiques complexes que requereixen l’opinió d’un cirurgià
+                maxil·lofacial.
               </p>
             </div>
           </div>
@@ -438,94 +420,91 @@ export default function LandingHMNouDelfos() {
         <section className="mx-auto max-w-7xl px-6 py-16">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-              Unidad de Cirugía Oral y Maxilofacial en Barcelona
+              Cirurgia oral i maxil·lofacial a Vic i Osona
             </h2>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              La Unidad de Cirugía Oral y Maxilofacial de HM Nou Delfos está orientada al
-              diagnóstico y tratamiento quirúrgico de patologías de la cavidad oral y de
-              los maxilares. Nuestro equipo atiende a pacientes de Barcelona y del área
-              metropolitana que requieren procedimientos de cirugía oral avanzada.
+              La nostra consulta està orientada al diagnòstic i al tractament
+              quirúrgic de patologies de la cavitat oral i dels maxil·lars. Atenem
+              pacients de Vic i de tota la comarca d’Osona que necessiten cirurgia
+              oral especialitzada.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Entre los tratamientos más frecuentes se encuentran la extracción de muelas
-              del juicio complejas, el tratamiento de cordales incluidos, la cirugía de
-              quistes maxilares y la colocación de implantes dentales. También valoramos
-              situaciones más complejas que requieren planificación quirúrgica
-              individualizada.
+              Entre els tractaments més freqüents hi ha l’extracció de queixals del
+              seny complexos, el tractament de dents incloses, la cirurgia de quists
+              maxil·lars i la col·locació d’implants dentals.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Nuestro objetivo es ofrecer una atención médica especializada, con un
-              enfoque seguro y personalizado para cada paciente, utilizando técnicas
-              actuales de cirugía oral y maxilofacial dentro del entorno hospitalario de
-              HM Nou Delfos.
+              El nostre objectiu és oferir una atenció mèdica propera, segura i
+              personalitzada, amb una valoració rigorosa i una explicació clara de
+              cada tractament.
             </p>
           </div>
         </section>
 
         <section className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-            Preguntas frecuentes
+            Preguntes freqüents
           </h2>
 
           <div className="mt-8 max-w-3xl space-y-6 text-slate-700">
             <div>
               <h3 className="text-lg font-semibold text-slate-900">
-                ¿Cuándo es necesario quitar las muelas del juicio?
+                Quan cal treure els queixals del seny?
               </h3>
               <p className="mt-2">
-                La extracción de las muelas del juicio suele recomendarse cuando
-                provocan dolor, infecciones repetidas, inflamación de la encía, caries
-                en el diente vecino o cuando permanecen retenidas dentro del hueso. Cada
-                caso debe valorarse mediante exploración clínica y radiografías.
+                L’extracció se sol recomanar quan provoquen dolor, infeccions
+                repetides, inflamació de la geniva, càries a la dent del costat o
+                quan romanen retinguts dins l’os. Cada cas s’ha de valorar amb
+                exploració clínica i radiografies.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-slate-900">
-                ¿Es dolorosa la extracción de una muela del juicio?
+                Fa mal treure un queixal del seny?
               </h3>
               <p className="mt-2">
-                La intervención se realiza habitualmente con anestesia local y, en
-                algunos casos, con sedación. Durante el procedimiento el paciente no
-                siente dolor. Después de la cirugía puede aparecer inflamación o
-                molestias leves que normalmente se controlan con medicación y cuidados
-                postoperatorios.
+                La intervenció es realitza habitualment amb anestèsia local i, en
+                alguns casos, amb sedació. Durant el procediment el pacient no nota
+                dolor. Després de la cirurgia pot aparèixer inflamació o molèsties
+                lleus, que normalment es controlen amb medicació i cures
+                postoperatòries.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-slate-900">
-                ¿Cuánto tiempo dura la recuperación?
+                Quant temps dura la recuperació?
               </h3>
               <p className="mt-2">
-                La recuperación suele ser rápida. La mayoría de los pacientes pueden
-                retomar sus actividades habituales en pocos días. La inflamación suele
-                disminuir progresivamente durante la primera semana siguiendo las
-                recomendaciones del cirujano.
+                La recuperació acostuma a ser ràpida. La majoria de pacients poden
+                reprendre les seves activitats habituals en pocs dies. La inflamació
+                disminueix progressivament durant la primera setmana seguint les
+                indicacions del cirurgià.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-slate-900">
-                ¿Cuándo es recomendable colocar un implante dental?
+                Quan és recomanable col·locar un implant dental?
               </h3>
               <p className="mt-2">
-                Los implantes dentales están indicados cuando se ha perdido uno o varios
-                dientes y se desea recuperar la función masticatoria y la estética.
-                Antes de realizar el tratamiento se evalúa la cantidad y calidad del
-                hueso mediante radiografías o TAC dental.
+                Els implants dentals estan indicats quan s’ha perdut una o diverses
+                dents i es vol recuperar la funció masticatòria i l’estètica. Abans
+                del tractament s’avalua la quantitat i la qualitat de l’os amb
+                radiografies o TAC dental.
               </p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-slate-900">
-                ¿Cuánto tiempo dura un implante dental?
+                Quant dura un implant dental?
               </h3>
               <p className="mt-2">
-                Con una correcta planificación quirúrgica y una buena higiene oral, los
-                implantes dentales pueden mantenerse en buen estado durante muchos años.
-                Las revisiones periódicas y el mantenimiento adecuado son fundamentales
-                para su éxito a largo plazo.
+                Amb una bona planificació quirúrgica i una higiene oral adequada, els
+                implants dentals poden mantenir-se en bon estat durant molts anys.
+                Les revisions periòdiques i el manteniment són fonamentals per al seu
+                èxit a llarg termini.
               </p>
             </div>
           </div>
@@ -533,64 +512,62 @@ export default function LandingHMNouDelfos() {
 
         <section className="mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-3xl font-bold tracking-tight text-slate-900">
-            Información ampliada sobre tratamientos
+            Informació ampliada sobre tractaments
           </h2>
 
           <p className="mt-4 max-w-3xl text-lg text-slate-700">
-            Para pacientes que desean conocer más detalles sobre los tratamientos más
-            frecuentes de cirugía oral, hemos preparado páginas específicas con
-            información ampliada.
+            Per als pacients que volen conèixer millor els tractaments més habituals
+            de cirurgia oral, prepararem pàgines específiques amb informació més
+            detallada.
           </p>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             <a
-              href="/muelas-del-juicio-barcelona"
+              href="/queixals-del-seny-vic"
               className="block rounded-3xl border border-slate-200 p-6 transition hover:shadow-md"
             >
               <h3 className="text-xl font-semibold text-slate-900">
-                Extracción de muelas del juicio en Barcelona
+                Queixals del seny a Vic
               </h3>
               <p className="mt-3 text-slate-700">
-                Información detallada sobre cordales incluidos, síntomas frecuentes,
-                cuándo es recomendable la extracción y cómo es el proceso de
-                recuperación.
+                Informació sobre queixals del seny inclosos, símptomes, quan és
+                recomanable l’extracció i com és la recuperació.
               </p>
-              <span className="mt-4 inline-block text-sm font-semibold text-sky-700">
-                Ver información completa →
+              <span className="mt-4 inline-block text-sm font-semibold text-emerald-700">
+                Veure informació completa →
               </span>
             </a>
 
             <a
-              href="/implantes-dentales-barcelona"
+              href="/implants-dentals-vic"
               className="block rounded-3xl border border-slate-200 p-6 transition hover:shadow-md"
             >
               <h3 className="text-xl font-semibold text-slate-900">
-                Implantes dentales en Barcelona
+                Implants dentals a Vic
               </h3>
               <p className="mt-3 text-slate-700">
-                Explicación completa sobre el tratamiento con implantes dentales,
-                planificación quirúrgica, casos complejos y resultados esperables.
+                Explicació completa del tractament amb implants dentals, planificació
+                quirúrgica i valoració de casos complexos.
               </p>
-              <span className="mt-4 inline-block text-sm font-semibold text-sky-700">
-                Ver información completa →
+              <span className="mt-4 inline-block text-sm font-semibold text-emerald-700">
+                Veure informació completa →
               </span>
             </a>
           </div>
         </section>
 
         <section
-          className="bg-gradient-to-r from-sky-800 to-sky-600 text-white"
-          id="contacto"
+          className="bg-gradient-to-r from-emerald-800 to-teal-600 text-white"
+          id="contacte"
         >
           <div className="mx-auto max-w-7xl px-6 py-16 text-center">
             <h2 className="text-3xl font-bold tracking-tight lg:text-4xl">
-              ¿Tienes dolor por una muela del juicio o necesitas valorar implantes
-              dentales?
+              Tens dolor per un queixal del seny o necessites valorar implants?
             </h2>
 
             <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-white/90">
-              Nuestro equipo de cirugía oral y maxilofacial en Barcelona puede valorar tu
-              caso y orientarte sobre el tratamiento más adecuado.
+              El nostre equip de cirurgia oral i maxil·lofacial a Vic et pot ajudar a
+              valorar el cas i orientar-te sobre el tractament més adequat.
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -600,14 +577,14 @@ export default function LandingHMNouDelfos() {
                 rel="noopener noreferrer"
                 className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:opacity-90"
               >
-                Pedir cita online
+                Demanar visita online
               </a>
 
               <a
-                href={hospitalPhone}
+                href={phoneHref}
                 className="rounded-2xl border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >
-                Llamar ahora
+                Trucar ara
               </a>
 
               <a
@@ -616,7 +593,7 @@ export default function LandingHMNouDelfos() {
                 rel="noopener noreferrer"
                 className="rounded-2xl border border-white/30 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >
-                Escribir por WhatsApp
+                Escriure per WhatsApp
               </a>
             </div>
           </div>
@@ -626,7 +603,7 @@ export default function LandingHMNouDelfos() {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Escribir por WhatsApp"
+          aria-label="Escriure per WhatsApp"
           className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-emerald-500 px-5 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-600"
         >
           <span className="text-lg">💬</span>
@@ -636,10 +613,12 @@ export default function LandingHMNouDelfos() {
         <div className="fixed bottom-0 left-0 right-0 z-40 border-t border-slate-200 bg-white/95 p-3 backdrop-blur md:hidden">
           <div className="mx-auto flex max-w-7xl gap-3">
             <a
-              href={hospitalPhone}
-              className="flex-1 rounded-2xl bg-sky-700 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-sky-800"
+              href={appointmentUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 rounded-2xl bg-emerald-700 px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-emerald-800"
             >
-              Llamar
+              Cita online
             </a>
 
             <a
